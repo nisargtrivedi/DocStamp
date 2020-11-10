@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/curve_board"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/menuFirm"
+            android:text="Firm"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:background="@drawable/tabbed"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <com.docstamp.Utils.TTextView
+            android:textSize="@dimen/_14ssp"
+            android:textColor="#000000"
+            android:id="@+id/menuPersonal"
+            android:text="Personal"
+            android:background="@drawable/tabbed_two"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <com.docstamp.Utils.TTextView
+        android:layout_below="@id/header"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#3E3E3E"
+        android:textStyle="bold"
+        android:text="Firm Directory"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp" />
+    <ImageView
+        android:id="@+id/imgGrid"
+        android:layout_toLeftOf="@id/imgList"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_below="@id/header"
+        android:src="@drawable/ic_gridview_active"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <ImageView
+        android:id="@+id/imgList"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/header"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_listview_inactive"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RvFolders"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/imgGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

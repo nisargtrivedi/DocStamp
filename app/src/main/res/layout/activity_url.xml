@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/drawer_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <com.docstamp.Utils.TTextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:textColor="@color/WHITE"
+        android:text="Enter Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.docstamp.Utils.TTextView>
+    <com.docstamp.Utils.EEditText
+        android:text=""
+        android:id="@+id/edtURL"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:paddingLeft="@dimen/_10sdp"
+        android:hint="Enter Username for example camehul"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:inputType="text"
+        android:background="@color/WHITE"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"></com.docstamp.Utils.EEditText>
+    <LinearLayout
+
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <CheckBox
+            android:fontFamily="@font/montserrat_medium"
+            android:id="@+id/chkTerms"
+            android:buttonTint="@color/WHITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CheckBox>
+        <com.docstamp.Utils.TTextView
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/tvTerms"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/WHITE"
+            android:text="@string/i_agree_terms_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </com.docstamp.Utils.TTextView>
+    </LinearLayout>
+
+    <com.docstamp.Utils.TTextView
+        android:id="@+id/btnsend"
+        android:textColor="#000"
+        android:text="GO"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_40sdp"
+        android:layout_below="@id/edtPhone"
+        android:background="@color/WHITE"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+</LinearLayout>

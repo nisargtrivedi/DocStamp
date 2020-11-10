@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/splash"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.docstamp.Utils.EEditText
+        android:id="@+id/edtPhone"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_below="@id/logo"
+        android:textColor="@color/TEXTBOX_TEXT_COLOR"
+        android:textColorHint="@color/TEXTBOX_TEXT_COLOR"
+        android:hint="Mobile Number"
+        android:textSize="@dimen/_12ssp"
+        android:inputType="number"
+        android:gravity="center"
+        android:digits="0123456789"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/curve_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+    <com.docstamp.Utils.TTextView
+        android:id="@+id/btnsend"
+        android:textColor="@color/WHITE"
+        android:text="SEND ME OTP"
+        android:gravity="center"
+        android:elevation="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_below="@id/edtPhone"
+        android:background="@drawable/curve_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp" />
+
+</RelativeLayout>
+</ScrollView>

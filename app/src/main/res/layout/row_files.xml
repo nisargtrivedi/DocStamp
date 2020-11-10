@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/menu"
+    android:background="@color/WHITE"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/img"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_folder" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/FileName"
+            android:ellipsize="marquee"
+            android:text=""
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#2C2C2C"
+            android:textSize="@dimen/_11ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/FilesSize"
+            android:text="0 MB"
+            android:gravity="center|left"
+            android:textStyle="normal"
+            android:textColor="#2C2C2C"
+            android:textSize="@dimen/_9ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="#EBEBEE"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"></View>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--App Colors-->
+    <color name="BUTTON_COLOR">#496CB7</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="TEXTBOX_TEXT_COLOR">#3E3E3E</color>
+    <color name="drawer_color">#4C72B5</color>
+    <color name="track_color">#A4C639</color>
+
+</resources>

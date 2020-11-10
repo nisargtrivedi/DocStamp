@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background"
+    android:elevation="@dimen/ten_dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/Menu"
+            android:src="@drawable/ic_back"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/tvYearTitle"
+            android:layout_toLeftOf="@id/Search"
+            android:layout_toRightOf="@id/Menu"
+            android:textColor="@color/WHITE"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="Details"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/Search"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_search"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rv1"
+        android:background="@color/WHITE"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.docstamp.Utils.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#8F8F8F"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/Title"
+            android:inputType="text"
+            android:ellipsize="marquee"
+            android:text=""
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#2C2C2C"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#8F8F8F"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="Date Upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/DateUpload"
+            android:inputType="text"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#2C2C2C"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#8F8F8F"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="File Size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/tvFileSize"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/_11ssp"
+            android:digits="0123456789"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#2C2C2C"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.docstamp.Utils.TTextView
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:id="@+id/btnshare"
+                android:text="DOWNLOAD FILE"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_14ssp"
+                android:gravity="center"
+                android:textColor="#3E3E3E"
+                android:background="@drawable/border_edittext_details"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp" />
+            <com.docstamp.Utils.TTextView
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:id="@+id/btnsave"
+                android:text="SHOW"
+                android:visibility="gone"
+                android:textSize="@dimen/_14ssp"
+                android:gravity="center"
+                android:textColor="@color/WHITE"
+                android:background="@drawable/curve_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp" />
+        </LinearLayout>
+        <com.docstamp.Utils.TTextView
+            android:textColor="#FF0000"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.docstamp.Utils.TTextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

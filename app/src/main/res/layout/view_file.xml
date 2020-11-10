@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/Menu"
+            android:src="@drawable/ic_back"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/tvTitle"
+            android:layout_toLeftOf="@id/Search"
+            android:layout_toRightOf="@id/Menu"
+            android:textColor="@color/WHITE"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="File"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/Search"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_search"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/wb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

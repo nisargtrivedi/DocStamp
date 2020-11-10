@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DocStamp</string>
+    <string name="didn_t_receive_sms">Didn\'t receive sms ?</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+
+    <string name="download_Pdf">Download pdf</string>
+    <string name="download_Doc">Download Doc</string>
+    <string name="download_zip">Download Zip</string>
+    <string name="download_video">Download Video</string>
+    <string name="download_mp3">Download MP3</string>
+    <string name="openFolder">Open Downloaded Folder</string>
+    <string name="downloadStarted">Download Started</string>
+    <string name="downloadCompleted">Download Completed</string>
+    <string name="downloadFailed">Download Failed</string>
+    <string name="downloadAgain">Download Again</string>
+    <string name="i_agree_terms_condition">I agree <u>Terms &amp; Condition</u></string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/background"
+    android:elevation="@dimen/ten_dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/Menu"
+            android:src="@drawable/ic_back"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/tvYearTitle"
+            android:layout_toLeftOf="@id/Search"
+            android:layout_toRightOf="@id/Menu"
+            android:textColor="@color/WHITE"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:text="Search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/Search"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_search"
+            android:scaleType="center"
+            android:layout_width="50dp"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rv1"
+        android:background="@drawable/curve_board"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.docstamp.Utils.EEditText
+            android:singleLine="true"
+            android:paddingRight="@dimen/_10sdp"
+            android:drawableRight="@drawable/ic_search_"
+            android:textColor="#3E3E3E"
+            android:text=""
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:hint="Search Text"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_14ssp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:id="@+id/edtSearchText"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/border_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+        <android.support.v7.widget.RecyclerView
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/RvFiles"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_below="@id/FolderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>

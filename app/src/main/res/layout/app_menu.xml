@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/drawer_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/drawer_color"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/ten_dp"
+            android:paddingTop="20dp"
+            android:paddingRight="@dimen/ten_dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgMenuProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dummy_user" />
+
+            <com.docstamp.Utils.TTextView
+                android:id="@+id/tvUsername"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center|left"
+                android:text=""
+                android:textColor="@color/WHITE"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/drawer_color"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lllFirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_small_folder" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="All Firm Folder"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lllPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_small_folder" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="All Personal Folder"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lllibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_small_folder" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Knowledge Library"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lllEditInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/edit_info" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Edit Information"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/llNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgNotification"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_notifications_black_24dp" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_toLeftOf="@id/On_Off"
+                        android:layout_toRightOf="@id/imgNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Push Notifications"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                    <android.support.v7.widget.SwitchCompat
+                        app:trackTint="@color/WHITE"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:id="@+id/On_Off"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lllogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/logout" />
+
+                    <com.docstamp.Utils.TTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Logout"
+                        android:textColor="@color/WHITE"
+                        android:textSize="@dimen/_13ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

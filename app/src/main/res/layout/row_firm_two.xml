@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/menu"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:background="@color/WHITE"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="horizontal"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_folder" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.docstamp.Utils.TTextView
+            android:id="@+id/FolderName"
+            android:text="TextAudit"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#2E2E39"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
